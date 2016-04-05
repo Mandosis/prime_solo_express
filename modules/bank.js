@@ -1,8 +1,8 @@
 var random = require('./random');
 var currency = require('./currency');
 
-var getMoney = function() {
-  return currency(random(100,1000000));
+var getMoney = function(min, max) {
+  return currency(random(min,max));
 }
 
 var balance = function() {
