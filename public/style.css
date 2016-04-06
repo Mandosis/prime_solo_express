@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/* Main page elements */
+body {
+  margin: 0;
+  padding: 0;
+  background: #EEE;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: #333;
+  color: #FFF;
+  position: absolute;
+  top:0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main {
+  margin-top: 100px;
+}
+
+section {
+  background: teal;
+  color: #FFF;
+  margin: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+}
+
+section:hover {
+  background: #07AA9E;
+  color: #FFF;
+}
+
+/* Buttons */
+button {
+  outline: none;
+  background: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 50px;
+  margin: 15px 5px 0px 5px;
+  transition: background 0.2s ease-in;
+}
+
+button:hover {
+  background: #07AA9E;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Form Elements */
+input {
+  outline: none;
+  background: #444;
+  height: 30px;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin: 15px 5px 0px 5px;
+  font-size: 16px;
+  transition: background 0.2s ease-in, border-color 0.2s ease-in, color 0.2s ease-in;
+  border-color: #333;
+  color: #CCC;
+}
+
+input:focus {
+  background: #555;
+  border: 3px solid teal;
+  margin: 12px 2px 0px 2px;
+  color: #EEE;
+}

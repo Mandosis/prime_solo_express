@@ -11,14 +11,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/balance', function(req, res) {
-  console.log("Request made for balance.\n" + bank.balance() + bank.money(min, max));
+  console.log("Request made for balance.\n" + bank.balance() + bank.money(min, max) + "\n");
   res.send(bank.balance() + bank.money(min, max));
 });
 
 app.post('/range', function(req, res) {
-  console.log("Request", req.body)
+  console.log("Request to change range", req.body)
   min = parseInt(req.body.min) || min;
   max = parseInt(req.body.max) || max;
+  res.sendStatus(200);
 });
 
 // Catch all
